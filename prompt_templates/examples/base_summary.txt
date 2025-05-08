@@ -1,0 +1,8 @@
+<USER_QUERY>
+blah blah...
+</USER_QUERY>
+
+The full document is 205 chunks. The following are chunks 10 through 20. Please summarize the content below according to the above instructions:
+<CONTENT>
+blah blah...
+</CONTENT>

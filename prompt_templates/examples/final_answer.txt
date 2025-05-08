@@ -1,0 +1,7 @@
+Given this final, top-level summary of the entire document:
+
+......
+
+please answer the user's query:
+
+...

@@ -1,0 +1,22 @@
+<USER_QUERY>
+blah blah...
+</USER_QUERY>
+
+The following are level 1 summaries of the document. These are summaries 1 through 10 of 21 total summaries. They represent summaries of chunks 1 through 100 of 205 total document chunks.
+
+Please combine these summaries into a single summary of chunks 1 through 200 of the document:
+
+Summary of chunks 1 through 10:
+<SUMMARY>
+...
+</SUMMARY>
+
+Summary of chunks 11 through 20:
+<SUMMARY>
+...
+</SUMMARY>
+
+Summary of chunks 21 through 30:
+<SUMMARY>
+...
+</SUMMARY>

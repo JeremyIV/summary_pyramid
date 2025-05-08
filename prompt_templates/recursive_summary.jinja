@@ -1,0 +1,23 @@
+<USER_QUERY>
+{{ user_query }}
+</USER_QUERY>
+
+<DOCUMENT_INFO 
+  total_chunks="{{ total_chunks }}"
+  summary_level="{{ summary_level }}"
+  summary_range_start="{{ summary_range_start }}"
+  summary_range_end="{{ summary_range_end }}"
+  total_summaries="{{ total_summaries }}"
+  chunk_range_start="{{ chunk_range_start }}"
+  chunk_range_end="{{ chunk_range_end }}"
+/>
+
+Please combine these summaries into a single summary of chunks {{ chunk_range_start }} through {{ chunk_range_end }} of the document:
+
+{% for summary in summaries %}
+Summary of chunks {{ summary.start_chunk }} through {{ summary.end_chunk }}:
+<SUMMARY>
+{{ summary.content }}
+</SUMMARY>
+
+{% endfor %}
