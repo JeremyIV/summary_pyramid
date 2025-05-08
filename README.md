@@ -1,6 +1,14 @@
-# Summary Pyramid
+# Summary Pyramid: "convolutional reading"
 
 Summary Pyramid is a tool for answering questions about very long documents that exceed an AI model's context window. It uses a hierarchical, recursive summarization approach to distill information from large documents while preserving information relevant to a specific query.
+
+The way Summary Pyramid aggregates information from across a large document is very similar to the way a convolutional neural network aggregates information from across a sequence. A sliding window summarizes different sections of the document, and then another sliding window summarizes those summaries, etc, exponentially reducing the total amount of text with each pass until we have distilled the document down to an amount of information that fits in the language model's context window.
+
+I suspect but haven't yet demonstrated that this kind of approach could actually improve performance even if the entire document fits in the model's context window. This is just a hunch though.
+
+Things to compare against:
+ - throwing everything in the context window
+ - a different long-document reading scaffolding framework based on a recurrent architecture instead of a convolutional one.
 
 ## Requirements
 
