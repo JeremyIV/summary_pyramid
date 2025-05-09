@@ -1,0 +1,13 @@
+<USER_QUERY>
+{{ user_query }}
+</USER_QUERY>
+
+<DOCUMENT_INFO total_chunks="{{ total_chunks }}" current_chunk="1" />
+
+You are beginning to process a document sequentially. This is the first section of the document.
+Please create an initial summary of this section, focusing on information relevant to the query above.
+Your summary should not exceed {{ summary_token_limit }} tokens.
+
+<CONTENT>
+{{ chunk_content }}
+</CONTENT>

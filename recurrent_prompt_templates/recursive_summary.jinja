@@ -1,0 +1,27 @@
+<USER_QUERY>
+{{ user_query }}
+</USER_QUERY>
+
+<DOCUMENT_INFO 
+  total_chunks="{{ total_chunks }}"
+  current_chunk="{{ current_chunk }}"
+  chunks_processed="{{ chunks_processed }}"
+/>
+
+Below is your current summary of the document so far (covering sections 1 through {{ chunks_processed - 1 }}):
+
+<CURRENT_SUMMARY>
+{{ current_summary }}
+</CURRENT_SUMMARY>
+
+Here is the next section (section {{ current_chunk }}) of the document:
+
+<NEW_CONTENT>
+{{ new_chunk_content }}
+</NEW_CONTENT>
+
+Please update your summary to incorporate relevant information from this new section. The updated summary should:
+1. Maintain key information from your previous summary that is relevant to the query
+2. Add important new information from the current section that helps answer the query
+3. Integrate the old and new information smoothly
+4. Not exceed {{ summary_token_limit }} tokens in length
